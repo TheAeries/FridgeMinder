@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FridgeMinder Pro - Home</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>FridgeMinder Pro</h1>
+            <p>Streamline Your Food Management</p>
+        </header>
+
+        <section class="fridge-section">
+            <h2>Your Fridge</h2>
+            <ul id="fridge-items">
+                <!-- Items will be displayed here -->
+            </ul>
+        </section>
+
+        <section class="add-item-section">
+            <h2>Add Item</h2>
+            <form id="addItemForm">
+                <input type="text" id="itemName" placeholder="Item Name" required>
+                <input type="date" id="expirationDate" required>
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+
+        <section class="recipe-section">
+            <h2>Recipe Suggestions</h2>
+            <div id="recipeSuggestions">
+                <p>Get recipes based on your fridge contents.</p>
+            </div>
+            <button id="suggestion-btn" onclick="showSuggestions()">Get Recipe Suggestions</button>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 FridgeMinder Pro. All Rights Reserved.</p>
+        </footer>
+    </div>
+   
+    <script src="app.js"></script>
+    <script>
+        function showSuggestions() {
+            window.location.href = "suggestions.html";
+        }
+    </script>
+</body>
+</html>

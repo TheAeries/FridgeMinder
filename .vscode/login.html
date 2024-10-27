@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FridgeMinder Pro - Login</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to FridgeMinder Pro</h1>
+        <form id="login-form" onsubmit="login(event)">
+            <h2>Login</h2>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" required>
+                <label>Password</label>
+                
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script>
+        function login(event) {
+            event.preventDefault();
+            window.location.href = "home.html";
+        }
+    </script>
+</body>
+</html>
